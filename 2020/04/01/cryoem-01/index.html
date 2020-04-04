@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: Tricks | Hexo</title>
+  <title>傅立叶变换与透镜成像的理解 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/tags/Tricks/index.html">
+  <meta name="description" content="作者: Yue内容均为原创  傅里叶变换与透镜成像之间的关系解释成像过程的简要概括（1）平面入射波（电子波）经一薄样品（相位物体），电子波从样品穿透，与原子核发生弹性散射后，电子束的电势φ(x,y)发生改变（电势φ的改变可转换为相位的变化得到像光栅函数；结构信息主要体现在电势φ的改变）；（2）然后出射波经透镜，在后焦面上形成衍射图像（第一次傅里叶变换）；（3）由于后焦面上的衍射图像是位置不变量，看">
+<meta property="og:type" content="article">
+<meta property="og:title" content="傅立叶变换与透镜成像的理解">
+<meta property="og:url" content="http://yoursite.com/2020/04/01/cryoem-01/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="作者: Yue内容均为原创  傅里叶变换与透镜成像之间的关系解释成像过程的简要概括（1）平面入射波（电子波）经一薄样品（相位物体），电子波从样品穿透，与原子核发生弹性散射后，电子束的电势φ(x,y)发生改变（电势φ的改变可转换为相位的变化得到像光栅函数；结构信息主要体现在电势φ的改变）；（2）然后出射波经透镜，在后焦面上形成衍射图像（第一次傅里叶变换）；（3）由于后焦面上的衍射图像是位置不变量，看">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-04-01T09:02:19.000Z">
+<meta property="article:modified_time" content="2020-04-01T09:54:41.677Z">
 <meta property="article:author" content="Yue">
+<meta property="article:tag" content="cryoEM">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -166,64 +171,201 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-cryoem-01" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/30/hexo/" class="archive-article-date">
-  	<time datetime="2020-03-30T04:37:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-30</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/30/hexo/">搭建静态博客-Hexo Github</a>
+    <h1 class="article-title" itemprop="name">
+      傅立叶变换与透镜成像的理解
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/04/01/cryoem-01/" class="archive-article-date">
+  	<time datetime="2020-04-01T09:02:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>作者: Yue<br>内容均为原创</p>
+<hr>
+<h2 id="傅里叶变换与透镜成像之间的关系解释"><a href="#傅里叶变换与透镜成像之间的关系解释" class="headerlink" title="傅里叶变换与透镜成像之间的关系解释"></a>傅里叶变换与透镜成像之间的关系解释</h2><h3 id="成像过程的简要概括"><a href="#成像过程的简要概括" class="headerlink" title="成像过程的简要概括"></a>成像过程的简要概括</h3><p>（1）平面入射波（电子波）经一薄样品（相位物体），电子波从样品穿透，与原子核发生弹性散射后，电子束的电势φ(x,y)发生改变（电势φ的改变可转换为相位的变化得到像光栅函数；结构信息主要体现在电势φ的改变）；<br>（2）然后出射波经透镜，在后焦面上形成衍射图像（第一次傅里叶变换）；<br>（3）由于后焦面上的衍射图像是位置不变量，看不出能反映结构的相位变化，所以在后焦面上的衍射束要经第二次傅里叶变换，利用像差经衬度传递函数CTF，把包含结构信息的相位的变化转变为衬度，则像平面上得到能反映结构信息的相位衬度相（第二次傅里叶变换）。</p>
+<a id="more"></a>
+<h3 id="傅里叶变换和透镜成像之间的关系"><a href="#傅里叶变换和透镜成像之间的关系" class="headerlink" title="傅里叶变换和透镜成像之间的关系"></a>傅里叶变换和透镜成像之间的关系</h3><p>从数学公式角度和物理意义角度解释<br><strong>简单来说，透镜的分解作用，是把出射波的每一个波作傅立叶变换，到物镜的后焦面上汇聚，是完全可以用傅立叶变换的级数分解来描述的，因为傅里叶级数可以展开成一堆平面波函数的和。</strong></p>
+<p>电子波（平面波）经过物体到后焦面的成像就是一次傅立叶变换；从后焦面到相衬是另一次傅立叶变换；</p>
+<h4 id="从数学公式角度理解"><a href="#从数学公式角度理解" class="headerlink" title="从数学公式角度理解"></a>从数学公式角度理解</h4><p>首先要知道：所有图像可以看作傅里叶级数，包括后焦面上形成的衍射图像，傅里叶级数表示图像的核心是使用了一个复平面上的“旋转向量”—“e^(it)”；</p>
+<p>第一次傅里叶变换所得的衍射图像可用傅里叶级数表示：也就是无数Cn<em>gn的和；<br>系数Cn体现的是旋转向量初始相位和频率的不同；<br>电子平面波的波函数形式和基函数gn类似：A</em>e^(iφ)；<br>也就是说傅里叶级数可以理解为由无数初始相位和不同频率的旋转向量的累加，可以看作类似于波函数形式的Cn*gn的累加，简单来说，傅里叶级数可以展开成一堆平面波函数的和。</p>
+<h4 id="从物理意义来解释"><a href="#从物理意义来解释" class="headerlink" title="从物理意义来解释"></a>从物理意义来解释</h4><p>光经物体后—每个物体各个方向发的光—经透镜有各个方向的光—按照光的传播方向分解—分解的每个方向的光=每个方向上的平面波，所有的平面波最后会聚在后焦面上—对应形成一个点。<br>透镜本身就是一个分解的作用，光按照平行光分解；傅立叶级数也是把级数展开，展开成一堆平面波的和；通过傅立叶级数的分解这种计算的方法也能实现透镜分解平行光的作用，傅立叶变换的作用就好像一个透镜，把出射波的每一个波作傅立叶变换，到物镜的后焦面上汇聚，透镜的作用也就完全可以用傅立叶变换的级数分解来描述了。</p>
+<h3 id="衬度成像原理"><a href="#衬度成像原理" class="headerlink" title="衬度成像原理"></a>衬度成像原理</h3><p>电子束经样品和透镜，投射到像平面上的衬度由三种：质厚衬度、衍射衬度和相位衬度；其中相位衬度相是最能反映结构信息的。</p>
+<h4 id="质厚衬度相的形成原理："><a href="#质厚衬度相的形成原理：" class="headerlink" title="质厚衬度相的形成原理："></a>质厚衬度相的形成原理：</h4><p>电子束经样品发生散射，轻原子的散射角小，重原子的散射角大，经过物镜光阑，可以选择特定散射角度的的光通过，例如选择散射角小的的光通过，则高角度散射透不过物镜光阑，则像平面上显示亮斑的是轻原子部分或较薄处，而暗部代表的是重原子部分或较厚处。</p>
+<h4 id="衍射衬度相的形成原理："><a href="#衍射衬度相的形成原理：" class="headerlink" title="衍射衬度相的形成原理："></a>衍射衬度相的形成原理：</h4><p>晶体样品的取向不同，入射束经晶体样品相干成像，像的明暗不同，通过移动物镜光阑的角度，通过比较衬度的明暗可以比较晶体的不同取向。</p>
+<h4 id="相位衬度相："><a href="#相位衬度相：" class="headerlink" title="相位衬度相："></a>相位衬度相：</h4><p>与前两者最大的区别在于，因为想要高分辨率信息，就要收集包括高散射角在内的散射光信息，此时需要所有光的信息，要把物镜光阑退出。因为要看样品的高分辨率结构，所以样品要足够薄。（因为成像的时候是这三者起主要作用，如果太厚则质厚衬度像起主要作用；衍射衬度像需要晶体，如果没有晶体就不存在衍射衬度的问题了；如果要让相位衬度居多，就要让样品足够的薄；电子波穿过以后只有相位发生变化，通过相位变化的信息来解读结构信息）<br>后焦面上的到的图像是位置不变量，是看不到相位变化的，所以后焦面的衍射束要经第二次傅里叶变换，利用像差经衬度传递函数CTF，把包含结构信息的相位的变化转变为衬度，这就是为什么叫相位衬度成像的原因。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>Thanks!<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">自学</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Tricks</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">cryoEM</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/01/cryoem-01/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2020/04/04/en-01/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          随笔-01
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2020/04/01/unix-01/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">UNIX Commands</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#傅里叶变换与透镜成像之间的关系解释"><span class="toc-number">1.</span> <span class="toc-text">傅里叶变换与透镜成像之间的关系解释</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#成像过程的简要概括"><span class="toc-number">1.1.</span> <span class="toc-text">成像过程的简要概括</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#傅里叶变换和透镜成像之间的关系"><span class="toc-number">1.2.</span> <span class="toc-text">傅里叶变换和透镜成像之间的关系</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#从数学公式角度理解"><span class="toc-number">1.2.1.</span> <span class="toc-text">从数学公式角度理解</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#从物理意义来解释"><span class="toc-number">1.2.2.</span> <span class="toc-text">从物理意义来解释</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#衬度成像原理"><span class="toc-number">1.3.</span> <span class="toc-text">衬度成像原理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#质厚衬度相的形成原理："><span class="toc-number">1.3.1.</span> <span class="toc-text">质厚衬度相的形成原理：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#衍射衬度相的形成原理："><span class="toc-number">1.3.2.</span> <span class="toc-text">衍射衬度相的形成原理：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#相位衬度相："><span class="toc-number">1.3.3.</span> <span class="toc-text">相位衬度相：</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -246,9 +388,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
